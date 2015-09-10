@@ -11,11 +11,12 @@ var quotes = [
 	{ quote: "We could be in a turtle's dream in outer space", origin: "frank" },
 	{ quote: "What's up bitches! I'm a man cheetah!", origin: "frank" },
 	{ quote: "I need an Advil, a roll of duct tape, a pack of peanuts, and four beers.", origin: "frank" },
-	{ quote: "Everybody lies on the internet.", origin: "frank" },
+	{ quote: "Everybody lies on the internet.", origin: "frank" }
 ];
 
 var current = 0;
 var score = 0;
+var max = quotes.length;
 
 function shuffle(o){
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -37,7 +38,7 @@ function nextQuote() {
 	$('.choice').removeClass('right wrong');
 	$('.choice').removeAttr('disabled');
 
-	if (current < quotes.length) {
+	if (current < max) {
 		$('.quote').fadeOut(400, function() {
 			$('.quote span').text(quotes[current].quote);
 			$('.quote').fadeIn(400);
@@ -49,7 +50,8 @@ function nextQuote() {
 }
 
 function endGame() {
-	$('.score').text((score / quotes.length) * 100);
+	$('.score').text(score);
+	$('.total').text(max);
 	$('section.game').fadeOut(400, function() {
 		$('section.results').fadeIn(400);
 	});
