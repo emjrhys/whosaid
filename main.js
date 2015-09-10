@@ -9,7 +9,7 @@ var quotes = [
 	{ quote: "Two dudes getting married, that doesn't seem very gay.", origin: "frank" },
 	{ quote: "I don't know how many years on this earth I got left. I'm gonna get real weird with it.", origin: "frank" },
 	{ quote: "We could be in a turtle's dream in outer space", origin: "frank" },
-	{ quote: "What’s up bitches! I’m a man cheetah!", origin: "frank" },
+	{ quote: "What's up bitches! I'm a man cheetah!", origin: "frank" },
 	{ quote: "I need an Advil, a roll of duct tape, a pack of peanuts, and four beers.", origin: "frank" },
 	{ quote: "Everybody lies on the internet.", origin: "frank" },
 ];
