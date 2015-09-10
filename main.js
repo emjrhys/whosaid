@@ -5,18 +5,25 @@ var quotes = [
 	{ quote: "I just do what satisfies me... it's all temporary.", origin: "jodj" },
 	{ quote: "You know what we should do? We should take one of these couches and put wheels on it and turn it into a car.", origin: "jodj" },
 	{ quote: "There's no such thing as too turnt.", origin: "jodj" },
+	{ quote: "I feel like I would be an irresponsible person.", origin: "jodj" },
+	{ quote: "Have you ever tried half-drowning yourself? I was doing that yesterday.", origin: "jodj" },
+	{ quote: "I'm 180 lbs of pure deliciousness.", origin: "jodj" },
+	{ quote: "Do you have anything better to do than cry?", origin: "jodj" },
 	{ quote: "Nobody washes the dishes! We eat food directly off the coffee table and you know it.", origin: "frank" },
 	{ quote: "Two dudes getting married, that doesn't seem very gay.", origin: "frank" },
 	{ quote: "I don't know how many years on this earth I got left. I'm gonna get real weird with it.", origin: "frank" },
 	{ quote: "We could be in a turtle's dream in outer space", origin: "frank" },
 	{ quote: "What's up bitches! I'm a man cheetah!", origin: "frank" },
 	{ quote: "I need an Advil, a roll of duct tape, a pack of peanuts, and four beers.", origin: "frank" },
-	{ quote: "Everybody lies on the internet.", origin: "frank" }
+	{ quote: "Everybody lies on the internet.", origin: "frank" },
+	{ quote: "When I'm dead, just throw me in the trash.", origin: "frank" },
+	{ quote: "I told you, animals suck.", origin: "frank" },
+	{ quote: "That sounds the tits!", origin: "frank" }
 ];
 
 var current = 0;
 var score = 0;
-var max = quotes.length;
+var max = 8;
 
 function shuffle(o){
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
