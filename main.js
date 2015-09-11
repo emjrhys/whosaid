@@ -68,7 +68,8 @@ function replay() {
 	current = 0;
 	score = 0;
 
-	$('.choice').attr('disabled', 'disabled');
+	$('.choice').removeAttr('disabled');
+	$('.next').attr('disabled', 'disabled');
 	$('section.results').fadeOut(400, function() {
 		$('section.start').fadeIn(400);
 	});
